@@ -6,6 +6,12 @@
 Mpack allows you to install/configure airflow directly from ambari.
 Apache Airflow version included: 1.10.0
 
+#### Package Airflow Mpack:
+
+```
+tar -czvf airflow-service-mpack.tar.gz airflow-service-mpack
+```
+
 #### Installing Apache Aiflow Mpack:
 1. Stop Ambari server.
 2. Install the Apache Airflow Mpack on Ambari server.
