@@ -18,7 +18,7 @@ After=network.target postgresql.service mysql.service redis.service rabbitmq-ser
 Wants=postgresql.service mysql.service redis.service rabbitmq-server.service
 
 [Service]
-EnvironmentFile=/etc/sysconfig/airflow
+EnvironmentFile=/etc/default/airflow
 User={airflow_user}
 Group={airflow_group}
 Type=simple
@@ -38,7 +38,7 @@ WantedBy=multi-user.target
 
 	confFileText = format("AIRFLOW_HOME={airflow_home}")
 
-	with open("/etc/sysconfig/airflow", 'w') as configFile:
+	with open("/etc/default/airflow", 'w') as configFile:
 		configFile.write(confFileText)
 	configFile.close()
 
@@ -54,7 +54,7 @@ After=network.target postgresql.service mysql.service redis.service rabbitmq-ser
 Wants=postgresql.service mysql.service redis.service rabbitmq-server.service
 
 [Service]
-EnvironmentFile=/etc/sysconfig/airflow
+EnvironmentFile=/etc/default/airflow
 User={airflow_user}
 Group={airflow_group}
 Type=simple
@@ -74,7 +74,7 @@ WantedBy=multi-user.target
 
 	confFileText = format("AIRFLOW_HOME={airflow_home}")
 
-	with open("/etc/sysconfig/airflow", 'w') as configFile:
+	with open("/etc/default/airflow", 'w') as configFile:
 		configFile.write(confFileText)
 	configFile.close()
 
@@ -90,7 +90,7 @@ After=network.target postgresql.service mysql.service redis.service rabbitmq-ser
 Wants=postgresql.service mysql.service redis.service rabbitmq-server.service
 
 [Service]
-EnvironmentFile=/etc/sysconfig/airflow
+EnvironmentFile=/etc/default/airflow
 User={airflow_user}
 Group={airflow_group}
 Type=simple
@@ -110,7 +110,7 @@ WantedBy=multi-user.target
 
 	confFileText = format("AIRFLOW_HOME={airflow_home}")
 
-	with open("/etc/sysconfig/airflow", 'w') as configFile:
+	with open("/etc/default/airflow", 'w') as configFile:
 		configFile.write(confFileText)
 	configFile.close()
 
