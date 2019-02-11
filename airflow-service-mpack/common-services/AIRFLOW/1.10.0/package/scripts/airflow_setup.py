@@ -168,7 +168,7 @@ def airflow_configure(env):
 		"lineage" : params.config['configurations']['airflow-lineage-site'],
 		"atlas" : params.config['configurations']['airflow-atlas-site'],
 		"hive" : params.config['configurations']['airflow-hive-site'],
-		"celery_broker_transport_options" : params.config['configurations']['airflow-celerybrokertransportoptions-site'],
+		#"celery_broker_transport_options" : params.config['configurations']['airflow-celerybrokertransportoptions-site'],
 		"elasticsearch" : params.config['configurations']['airflow-elasticsearch-site'],
 		"kubernetes" : params.config['configurations']['airflow-kubernetes-site'],
 		"kubernetes_secrets" : params.config['configurations']['airflow-kubernetessecrets-site']
